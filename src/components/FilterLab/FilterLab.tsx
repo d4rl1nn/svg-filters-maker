@@ -236,7 +236,7 @@ export default function FilterLab() {
     return n;
   });
 
-  const filterMarkup = useMemo(() => buildFilterMarkup(prims, filterId, colorSpace), [prims, filterId, colorSpace]);
+  const filterMarkup = buildFilterMarkup(prims, filterId, colorSpace);
 
   const getInputOptions = (uptoIdx: number) => {
     const opts = new Set(['SourceGraphic', 'SourceAlpha']);
